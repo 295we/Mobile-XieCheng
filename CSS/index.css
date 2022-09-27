@@ -1,0 +1,683 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?s04722');
+    src: url('../fonts/icomoon.eot?s04722#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?s04722') format('truetype'),
+        url('../fonts/icomoon.woff?s04722') format('woff'),
+        url('../fonts/icomoon.svg?s04722#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+body,
+html {
+    font: normal 16px/1.5 PingFangSC-regular, Tahoma, Lucida Grande, Verdana, Microsoft Yahei, STXihei, hei;
+}
+
+body {
+    color: #000;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    background: #f4f4f4;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.search-index {
+    /* 固定定位的父亲是屏幕 且外边距无效 */
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 540px;
+    min-width: 320px;
+    width: 100%;
+    height: 48px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 12px 12px 6px;
+    box-sizing: border-box;
+}
+
+.search-box {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30px;
+    border-radius: 16px;
+    border: 1.8px solid #0086f6;
+    color: #666;
+    font-size: .94rem;
+}
+
+.search-box i::before {
+    content: '\e9fa';
+    display: block;
+    font-family: 'icomoon';
+    font-style: normal;
+    font-size: 16px;
+    margin-left: 12px;
+    margin-top: 2px;
+    margin-right: 12px;
+}
+
+.search-box input {
+    width: 80%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.main-nav {
+    box-sizing: border-box;
+    padding: 60px 12px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 275px;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.main-nav-warp {
+    box-sizing: border-box;
+    width: 99%;
+    height: 184px;
+    display: flex;
+    /* background-color: pink; */
+    border-radius: 10px;
+}
+
+.main-nav-warp ul {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav-warp ul li:first-child a span {
+
+    color: #fff;
+}
+
+.main-nav-warp ul li {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+    margin-right: 1px;
+    margin-bottom: 1px;
+}
+
+.main-nav-warp ul:first-child li:first-child span:first-child {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 4px;
+    background-image: url(../image/hotel.png);
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+
+.main-nav-warp ul:first-child li:first-child {
+    border-top-left-radius: 10px;
+    background-color: rgb(251, 114, 83);
+}
+
+.main-nav-warp ul:first-child li:nth-child(2) span:first-child {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 4px;
+    background-image: url(../image/hotel_inn.png);
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+
+.main-nav-warp ul:first-child li:nth-child(2) {
+    background-color: rgb(255, 245, 241);
+}
+
+.main-nav-warp ul:first-child li:nth-child(3) span:first-child {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 4px;
+    background-image: url(../image/hotel_sale.png);
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+
+.main-nav-warp ul:first-child li:nth-child(3) {
+    border-bottom-left-radius: 10px;
+    background-color: rgb(255, 245, 241);
+}
+
+.main-nav-warp ul:nth-child(2) li:nth-child(1) span:first-child {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 4px;
+    background-image: url(../image/flight.png);
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+
+.main-nav-warp ul:nth-child(2) li:nth-child(1) {
+    background-color: rgb(76, 168, 250);
+}
+
+.main-nav-warp ul:nth-child(2) li:nth-child(2) span:first-child {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 4px;
+    background-image: url(../image/flight_package.png);
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+
+.main-nav-warp ul:nth-child(2) li:nth-child(2) {
+    background-color: rgb(239, 249, 255);
+}
+
+.main-nav-warp ul:nth-child(2) li:nth-child(3) span:first-child {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 4px;
+    background-image: url(../image/airport_transfer.png);
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+}
+
+.main-nav-warp ul:nth-child(2) li:nth-child(3) {
+    background-color: rgb(239, 249, 255);
+}
+
+.main-nav-warp ul:nth-child(3) li:nth-child(1) span:first-child {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 4px;
+    background-image: url(../image/train_ticket.png);
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+
+.main-nav-warp ul:nth-child(3) li:nth-child(1) {
+    background-color: rgb(99, 151, 255);
+}
+
+.main-nav-warp ul:nth-child(3) li:nth-child(2) span:first-child {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 4px;
+    background-image: url(../image/bus_ticket.png);
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+
+.main-nav-warp ul:nth-child(3) li:nth-child(2) {
+    background-color: rgb(242, 245, 255);
+}
+
+.main-nav-warp ul:nth-child(3) li:nth-child(3) span:first-child {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 4px;
+    background-image: url(../image/car.png);
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+
+.main-nav-warp ul:nth-child(3) li:nth-child(3) {
+    background-color: rgb(242, 245, 255);
+}
+
+.main-nav-warp ul:nth-child(4) li:nth-child(1) span:first-child {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 4px;
+    background-image: url(../image/vacation.png);
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+
+.main-nav-warp ul:nth-child(4) li:nth-child(1) {
+    background-color: rgb(64, 206, 180);
+}
+
+.main-nav-warp ul:nth-child(4) li:nth-child(2) span:first-child {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 4px;
+    background-image: url(../image/ticket.png);
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+
+.main-nav-warp ul:nth-child(4) li:nth-child(2) {
+    background-color: rgb(236, 252, 248);
+}
+
+.main-nav-warp ul:nth-child(4) li:nth-child(3) span:first-child {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 4px;
+    background-image: url(../image/weekend.png);
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+
+.main-nav-warp ul:nth-child(4) li:nth-child(3) {
+    background-color: rgb(236, 252, 248);
+}
+
+.main-nav-warp ul:nth-child(5) li:nth-child(1) span:first-child {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 4px;
+    background-image: url(../image/gs.png);
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+
+.main-nav-warp ul:nth-child(5) li:nth-child(1) {
+    border-top-right-radius: 10px;
+    background-color: rgb(255, 152, 63);
+}
+
+.main-nav-warp ul:nth-child(5) li:nth-child(2) span:first-child {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 4px;
+    background-image: url(../image/food.png);
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+
+.main-nav-warp ul:nth-child(5) li:nth-child(2) {
+    background-color: rgb(255, 249, 242);
+}
+
+.main-nav-warp ul:nth-child(5) li:nth-child(3) span:first-child {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 4px;
+    background-image: url(../image/shop.png);
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+
+.main-nav-warp ul:nth-child(5) li:nth-child(3) {
+    border-bottom-right-radius: 10px;
+    background-color: rgb(255, 249, 242);
+}
+
+.main-nav-warp ul li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.main-nav-warp ul li a span {
+    font-size: 12px;
+    color: #333;
+}
+
+#switch {
+    margin-top: 10px;
+    width: 5%;
+    display: block;
+    width: 14px;
+    background-color: #0086f6;
+    height: 4px;
+    border-radius: 2px;
+}
+
+#switch::after {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #ccc;
+    margin-left: 20px;
+}
+
+.sub-banner {
+    width: 94%;
+    height: 145px;
+    margin: 10px auto 0;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    flex: 1;
+    width: 50%;
+    height: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    background: #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.banner:nth-child(2) {
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner .block-header {
+    display: flex;
+    justify-content: center;
+}
+
+.banner .block-header img {
+    display: block;
+    margin-right: 15px;
+    width: 73px;
+    height: 20px;
+}
+
+.banner .block-header span {
+    height: 16px;
+    border-radius: 2px;
+    background: #fdefd2;
+    font-size: 10px;
+    color: #ae6e15;
+    line-height: 16px;
+    padding: 1px 4px;
+    white-space: nowrap;
+}
+
+#img1 {
+    margin-right: 0;
+}
+
+#span1 {
+    background: #ffebe3;
+    color: #ff4607;
+}
+
+.banner:nth-child(2) .rank-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rank-wrapper a:first-child {
+    margin-right: 2px;
+    border-radius: 8px;
+}
+
+.banner:nth-child(2) .rank-wrapper a {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner:nth-child(2) .rank-wrapper a span {
+    padding-left: 5px;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: PingFangSC-Semibold;
+    font-size: 11px;
+    color: #333;
+    line-height: 1.1;
+}
+
+.banner:nth-child(2) .rank-wrapper img {
+    width: 80px;
+    height: 84px;
+    border-radius: 8px;
+    margin: 7px auto 5px;
+}
+
+.rank-wrapper a i {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 24px;
+    height: 14px;
+    line-height: 14px;
+    padding: 0 3px;
+    background-image: linear-gradient(270deg, #f8e1bd, #e2c089);
+    border-radius: 6px 0 6px 0;
+    font-size: 10px;
+    color: #663c00;
+    font-style: normal;
+}
+
+.slider {
+    position: relative;
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 110px;
+}
+
+.slider img {
+    display: block;
+    width: 100%;
+    height: 90%;
+    border-radius: 8px;
+}
+
+.slider img::after {
+    content: '杭州城中香格里拉大酒店1晚';
+    display: block;
+}
+
+.slider i {
+    font-style: normal;
+    position: absolute;
+    z-index: 9;
+    top: -3px;
+    left: 0px;
+    height: 14px;
+    line-height: 14px;
+    padding: 0 3px;
+    background: rgba(51, 51, 51, .8);
+    border-radius: 6px 0 6px 0;
+    font-size: 10px;
+    color: #fff;
+}
+
+.slider span {
+    flex: 1;
+    width: 70%;
+    height: 18px;
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #f60;
+    padding-right: 2px;
+}
+
+.slider p {
+    position: absolute;
+    bottom: 18px;
+    left: 6px;
+    right: 0px;
+    border-radius: 0 6px 0 6px;
+    font-size: 11px;
+    line-height: 12px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.ad {
+    width: 99%;
+    height: 99%;
+    margin: 0 auto;
+    padding-top: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.ad img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    position: fixed;
+    box-shadow: 0 -5px 15px 0 rgb(0 0 0 / 5%);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 49px;
+    background-color: #fff;
+    max-width: 540px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    float: left;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 5px;
+    color: #666;
+    font-size: 11px;
+    line-height: 12px;
+}
+
+footer a [class^='local-'] {
+    width: 32px;
+    height: 32px;
+    background: url(../image/tabbar.png) no-repeat 0 0;
+    background-size: 32px auto;
+}
+
+footer a .local-icon2 {
+    background-position: 0 -32px;
+}
+
+footer a .local-icon3 {
+    background-position: 0 -64px;
+}
+
+footer a .local-icon4 {
+    background-position: 0 -96px;
+}
+
+.toolbox {
+    width: 100%;
+    height: 120px;
+    padding-top: 12px;
+    padding-bottom: 50px;
+    background-color: transparent;
+}
+
+.tool-group {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 12px;
+}
+
+.tool-group a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    min-width: 100px;
+}
+
+.tool-group a span:nth-child(1)::before {
+    content: '\e942';
+    display: block;
+    font-family: 'icomoon';
+    color: #666;
+    font-size: 13px;
+    text-align: center;
+    line-height: 17px;
+    margin-right: 4px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+.tool-group a:nth-child(2) span:nth-child(1)::before {
+    content: '\e917';
+}
+
+.tool-group a span:nth-child(2) {
+    font-size: 13px;
+    color: #333;
+    text-align: center;
+    line-height: 17px;
+}
+
+.tool-ver {
+    color: #666;
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 13px;
+}
+
+.tool-ver a {
+    color: #666;
+}
+
+.tool-ver a:first-child::after {
+    content: "";
+    margin-right: 24px;
+    padding-right: 24px;
+    background-position: 100%;
+    background-image: linear-gradient(90deg, transparent 50%, #ccc 0);
+    background-repeat: no-repeat;
+    background-size: 1px 100%;
+}
+
+.tool-ver p {
+    margin-top: 16px;
+    font-size: 10px;
+    color: #666;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 12px;
+}
+
+.tool-ver p span {
+    margin-left: 6px;
+}
